@@ -38,6 +38,11 @@ body {
   text-decoration: none;
 }
 
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
 .web {
   color: var(--accent-color);
 }
@@ -107,6 +112,20 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
 /* Особливості */
 
 .feature .title {
@@ -154,11 +173,6 @@ body {
   color: var(--primary-white-color);
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-}
-
 .footer .description {
   color: var(--primary-white-color);
 }
@@ -177,20 +191,6 @@ body {
 .button {
   color: var(--title-text-color);
   background-color: var(--background-secondary-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
 
   font-weight: 500;
   font-size: 16px;
@@ -223,12 +223,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-.link .title:hover,
-.link .title:focus {
-  color: var(--accent-color);
-}
-
-.link .description:hover,
-.link .description:hover {
+.link:hover .title,
+.link:focus .title,
+.link:hover .description,
+.link:focus .description {
   color: var(--accent-color);
 }
