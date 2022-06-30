@@ -38,6 +38,11 @@ body {
   text-decoration: none;
 }
 
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
 .web {
   color: var(--accent-color);
 }
