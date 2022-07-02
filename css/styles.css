@@ -30,12 +30,20 @@
 }
 
 body {
-  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: var(--main-font);
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* Reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
 }
 
 /* Logo */
@@ -44,6 +52,7 @@ body {
   color: var(--logo-text-color);
   font-family: var(--secondary-font);
 
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -62,7 +71,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -74,10 +82,6 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
 .contacts .link {
   color: var(--primary-text-color);
 
@@ -85,7 +89,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .contacts .link:hover,
@@ -159,14 +162,29 @@ body {
 
 /* Наша команда */
 
-.team .title {
+.team {
+  background-color: var(--background-secondary-color);
+}
+
+.team .team-item {
+  background-color: var(--primary-white-color);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
+}
+
+.team .team-list {
+  text-align: center;
+}
+
+.team-list .title {
   color: var(--title-text-color);
 
   font-weight: 500;
 }
 
-.team .title,
-.team .description {
+.team-list .title,
+.team-list .description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -217,6 +235,7 @@ body {
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
   cursor: pointer;
 }
 
@@ -234,8 +253,8 @@ body {
   cursor: pointer;
 }
 
-.link {
-  text-decoration: none;
+.gallery {
+  text-align: center;
 }
 
 .link .title {
