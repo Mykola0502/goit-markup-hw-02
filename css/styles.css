@@ -64,13 +64,16 @@ body {
 
 /* Site nav */
 
-.site-nav .link {
-  color: var(--title-text-color);
-
+.site-nav,
+.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
@@ -84,15 +87,12 @@ body {
 
 .contacts .link {
   color: var(--primary-text-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
   color: var(--accent-color);
 }
 
@@ -209,13 +209,14 @@ body {
   color: var(--primary-white-color);
 }
 
+.contact.link {
+  color: var(--footer-contacts-color);
+}
 .address {
   font-style: normal;
 }
 
-.contact.link {
-  color: var(--footer-contacts-color);
-
+.footer-contacts {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
