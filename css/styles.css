@@ -40,7 +40,6 @@ body {
 /* Reset styles */
 .link {
   text-decoration: none;
-  color: currentColor;
 }
 .list {
   list-style: none;
@@ -65,7 +64,7 @@ body {
 /* Site nav */
 
 .site-nav,
-.contacts {
+.header-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,12 +84,12 @@ body {
   color: var(--accent-color);
 }
 
-.contacts .link {
+.header-contacts .link {
   color: var(--primary-text-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus,
+.header-contacts .link:hover,
+.header-contacts .link:focus,
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
   color: var(--accent-color);
@@ -112,7 +111,7 @@ body {
   text-transform: uppercase;
 }
 
-.button.primary {
+.button.button-primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -124,8 +123,8 @@ body {
   cursor: pointer;
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.button.button-primary:hover,
+.button.button-primary:focus {
   color: var(--primary-white-color);
   background-color: var(--btn-hover-color);
 
@@ -140,7 +139,7 @@ body {
 
 /* Особливості */
 
-.feature .title {
+.feature-list .title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -184,7 +183,7 @@ body {
 }
 
 .team-list .title,
-.team-list .description {
+.team-list .team-description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -205,11 +204,11 @@ body {
   color: var(--accent-color);
 }
 
-.footer .description {
+.footer .map {
   color: var(--primary-white-color);
 }
 
-.contact.link {
+.footer-contact.link {
   color: var(--footer-contacts-color);
 }
 .address {
@@ -225,7 +224,7 @@ body {
 
 /* Портфоліо */
 
-.button {
+.button-item {
   color: var(--title-text-color);
   background-color: var(--background-secondary-color);
 
@@ -240,8 +239,8 @@ body {
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button-item:hover,
+.button-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -254,11 +253,11 @@ body {
   cursor: pointer;
 }
 
-.gallery {
+.gallery-list {
   text-align: center;
 }
 
-.link .title {
+.link .gallery-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -267,7 +266,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.link .description {
+.link .gallery-description {
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -275,9 +274,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-.link:hover .title,
-.link:focus .title,
-.link:hover .description,
-.link:focus .description {
+.link:hover .gallery-title,
+.link:focus .gallery-title,
+.link:hover .gallery-description,
+.link:focus .gallery-description {
   color: var(--accent-color);
 }
